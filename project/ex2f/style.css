@@ -1,0 +1,140 @@
+.nav-link:hover,
+.dropdown-item:hover {
+  color: red !important;
+}
+
+.active-link {
+  color: red !important;
+}
+
+/* Accordian */
+
+.accordion {
+  --bs-accordion-active-bg: #212529 !important;
+  --bs-accordion-active-color: #f1f2f3 !important;
+  --bs-accordion-btn-focus-box-shadow: none !important;
+}
+
+/* small main content */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px;
+}
+.section-image {
+  margin: 22px;
+}
+.young-eminem {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10%;
+}
+.short-bio {
+  max-width: 625px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(234, 234, 234);
+  border: 2px solid rgb(239, 34, 34);
+  border-radius: 8px;
+  font-size: 18px;
+  letter-spacing: 0.125rem;
+  margin: 22px;
+  padding: 13px;
+}
+
+/* small DISCOGRAPHY content */
+.grid-container-1,
+.grid-container-2 {
+  margin: 22px;
+}
+.album {
+  padding: 13px;
+}
+.album button {
+  background-color: rgb(239, 34, 34);
+  border-radius: 9px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.album button:hover {
+  transform: scale(105%);
+}
+.album-image {
+  max-width: 100%;
+  height: auto;
+}
+.album-tracks {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(234, 234, 234);
+  border: 2px solid rgb(239, 34, 34);
+  border-radius: 8px;
+  font-size: 18px;
+  letter-spacing: 0.125rem;
+  padding: 11px;
+  min-width: 50dvw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.album-thumbnail {
+  max-width: 25%;
+  height: auto;
+}
+
+/* small LYRICS content */
+#lyrics .main-container {
+  flex-direction: row;
+  align-items: flex-start;
+}
+#lyrics .lyrics-content {
+  padding: 13px;
+}
+.track {
+  cursor: pointer;
+}
+.lyrics {
+  padding: 7px;
+  color: rgb(239, 34, 34);
+}
+/* small VIDEOS content */
+.my-name-is {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+/* medium screens */
+@media (min-width: 895px) {
+  /* medium main content */
+  #home .main-container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* medium DISCOGRAPHY content */
+  .grid-container-1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  .grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+  }
+}
+/* large screens */
+@media (min-width: 1024px) {
+  /* large LYRICS content */
+  #lyrics .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #lyrics .albums-list {
+    display: flex;
+  }
+}
+/* xl screens */
+@media (min-width: 1280px) {
+}
